@@ -18,7 +18,7 @@ jobs:
         env:
           REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          pip install -r requirements.txt
+          pip install -r requirments.txt
           python train_model.py
 
           echo "RF and LR Model Score" > report.md
